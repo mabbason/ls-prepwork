@@ -1,0 +1,36 @@
+Question no 5 - Indetify Constructors and classify methods
+1. substring
+	Constructor = String
+	method = Protoype
+2. create
+	Constructor = Object
+	method = Static
+3. fromCharCode
+	Constructor = String
+	method = Static
+4. slice
+	Constructor = Array, String
+	method = Prototype
+5. toString
+	Constructor = String, Number, Array, Object
+	method = Prototype
+	
+Question no 6 - Variable names that satisfy the style guidelines.
+index - standard camelCase
+lazyDog - standard camelCase
+operand2 - standard camelCase, number is at the end not beginning
+
+Question no 7 - Function names that satisfy the style guidelines.
+index - standard camelCase
+CatName - Constructor functions only
+lazyDog - standard camelCase
+operand2 - standard camelCase, number is at the end not beginning
+
+Question no 8 - Constant names that satisfy the style guidelines.
+CatName - Pascal case
+BIG_NUMBER - SCREAMING_SNAKE_CASE
+
+Question no 9 - Names which dont satisfy style guidelines
+snake_case - no error, but against style guide
+quick_Fox - no error, but against style guide
+1stCharacter - error, no leading number allowed
