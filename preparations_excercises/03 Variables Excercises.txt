@@ -1,59 +1,23 @@
-Question no 1 - Concatenate strings
-Full Name = 'Miles ' + 'Abbason';
+Question no 1
+see greeter.js
 
-Question no 2 - Determine digits of 4 digit number
-1. thousands place = (number - (number % 1000)) / 1000
-2. hundreds place = ((number % 1000) - ((number % 1000) % 100)) / 100
-3. tens place = (number % 100 - (number % 10)) / 10
-4. ones place = number % 10
+Question no 2
+see age.js
 
-Question no 3 - Data Types
-'true' = string
-false = boolean
-1.5 - number (floating point)
-2 - number (integer)
-undefined - undefined
-{ foo: 'bar'} - object
+Question no 3
+The result is that foo is undefined. Because foo was assigned inside a block, not in the global scope where it was then attempted to be logged.
 
-Question no 4 - Code logs
-Has to do with implicit coercion, if any one of the values in a concetenation is a string, JavaScript coerces all the other values to strings and concatenates them.
+Question no 4
+line no. 6 should produce an error because it it attempting to reassign the constant that was declared. Then the last three console.logs should all print with 'Victor' as the name again.
 
-Question no 5 - Refactor prior w explicit coercion
-console.log(Number('5') + 10)
+Question no 5
+It should produce an error on line 3 because the variable foo was already declared in the global scope. The global scope reaches into the block, but not the other way around. 
 
-Question no 6 - Template Literal
-console.log(`The value of ${Number('5')} + 10 is 15.`);
-yes
+Bummer, looks like I got this wrong. Maybe this is one of those "forgiving" instances of JavaScript. Ironically enough my first impulse was correct, but then I thought about block scope and thought that since 'let' was used with foo again it would error. I see that it just temporarily overrides the global foo.
 
-7. Error if accessing index greater than array length?
-No, I think that it will return undefined.
+Question no 6
+Alright now here is where I think my previous thinking should hold. The const FOO has been declared on global, so block declaration should produce an error.
 
-8. Create array 'names' with pet names... 
-const names = ['asta', 'butterscotch', 'rascal', 'toothless', 'darwin'];
-
-9. Create object 'pets' with pet names & animal
-let pets = {
-	asta: dog,
-	butterscotch: cat;
-	pudding: fish;
-	neptune: 'bearded dragon';
-	darwin: bunny;	
-	};
-
-10. Evaluate to? 'foo' === 'Foo'
-false; strictly equals... the right side foo is capitalized
-
-11. parseInt('3.1415') evaluates to?
-3
-
-12 '12' < '9' evaluates to?
-NaN I believe? Two strings. Second guess is undefined.
-True? Ah I didn't know that... wow there is a lot to learn.
-
-
-
-
-
-	
+Bummer, wrong again... it looks like I need to work on understanding block scope a little better.
 
 
