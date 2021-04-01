@@ -1,4 +1,7 @@
 let rlSync = require('readline-sync');
-let nameFirst = rlSync.question("What's your first name? ");
-let nameLast = rlSync.question("What's your last name? ");
-console.log(`Hello, ${nameFirst} ${nameLast}!`);
+
+function nameWhole(nameFirst, nameLast) {
+  console.log(`Hello, ${nameFirst} ${nameLast}!`);
+}
+
+nameWhole(rlSync.question("What's your first name? "), rlSync.question("What's your last name? "));
