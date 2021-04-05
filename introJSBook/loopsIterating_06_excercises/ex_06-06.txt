@@ -1,0 +1,11 @@
+Excercise no 6
+Reimplement the factorial function from exercise 2 using recursion. 
+Once again, you may assume that the argument is always a positive integer.
+
+function factorial (numInput) {
+  if (numInput === 1) return 1;
+  
+  let f ;
+  f = numInput * factorial(numInput - 1);
+  return f;
+}

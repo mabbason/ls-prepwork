@@ -1,0 +1,20 @@
+Excercise no 3
+The following code causes an infinite loop (a loop that never stops iterating). Why?
+
+let counter = 0;
+
+while (counter = 1) {
+  console.log(counter);
+  counter += 1;
+
+  if (counter > 2) {
+    break;
+  }
+}
+
+response:
+  1. The while loop is testing a condition which will always be true
+    - that is (counter = 1) will always be true because it isn't testing, it is assigning
+  2. The second is that since the while loop condition always assigns counter to 1
+    then it is only incremented up to 2 in the block and doesn't activate the MORE
+    than 2 test to kick out with break.

@@ -1,0 +1,6 @@
+Excercise no 10
+What value does the following expression evaluate to?
+
+'foo' === 'Foo'
+
+This evaluates to false because one of the strings has a capitalized F

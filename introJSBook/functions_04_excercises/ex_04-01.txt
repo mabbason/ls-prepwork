@@ -1,0 +1,29 @@
+Excercise no 1
+What does this code log to the console? 
+Does executing the foo function affect the output? Why or why not?
+
+let bar = 1;
+function foo() {
+  let bar = 2;
+}
+
+foo();
+console.log(bar);
+
+response:
+This logs
+1
+
+foo() is run, but it is acting on a local scope 'bar' NOT the global 'bar' variable
+so it doesn't change the value of the variable that is logged.
+if it had been written:
+
+let bar = 1;
+function foo() {
+  bar = 2;
+}
+
+foo();
+console.log(bar);
+
+then I believe it WOULD change the value of global 'bar'

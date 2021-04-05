@@ -1,0 +1,28 @@
+Excercise no 4
+What does the following code log to the console, and why?
+
+function barCodeScanner(serial) {
+  switch (serial) {
+    case '123':
+      console.log('Product1');
+    case '113':
+      console.log('Product2');
+    case '142':
+      console.log('Product3');
+    default:
+      console.log('Product not found!');
+  }
+}
+
+barCodeScanner('113');
+
+response:
+It will log the following to the console:
+Product2
+Product3
+Product not found!
+
+The reason it logs three different cases is becuase there were no breaks
+coded into the switch
+
+

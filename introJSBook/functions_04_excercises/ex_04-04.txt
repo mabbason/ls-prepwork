@@ -1,0 +1,14 @@
+Excercise no 4
+What does the following code log to the console?
+
+function scream(words) {
+  words = words + '!!!!';
+  return;
+  console.log(words);
+}
+
+scream('Yipeee');
+
+response:
+this does not log anything to the console as the console.log doesn't get read before JavaScript
+is kicked out of the function by the return on the preceding line

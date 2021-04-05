@@ -1,0 +1,8 @@
+Excercise no 12
+What value does the following expression evaluate to?
+
+'12' < '9'
+
+When using comparisons with strings, JavaScript compares letter/digit by digit.
+But I wonder if there is some type of coercion here. I am going to go with a standard
+digit by digit comparison... so I am going to say 'true'

@@ -1,0 +1,14 @@
+Excercise no 5
+What does this program log to the console? Why?
+
+let foo = 'bar';
+{
+  let foo = 'qux';
+}
+
+console.log(foo);
+
+response:
+This will log 'bar' to the console. 'qux' is assigned to foo in the block scope
+but by the time console goes to log anything the variable has been destroyed and
+the only foo left standing is the global scoped 'bar'

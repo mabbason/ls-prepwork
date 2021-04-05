@@ -1,0 +1,16 @@
+Excercise no 8
+Write a function that logs whether a number is between 0 and 50 (inclusive), between 51 and 100 (inclusive), greater than 100, or less than 0.
+
+response:
+
+function numRange(numInput) {
+  if (numInput < 0) {
+    console.log(`${numInput} is less than 0`);
+  } else if (numInput <= 50) {
+    console.log(`${numInput} is between 0 and 50`);
+  } else if (numInput <= 100) {
+    console.log(`${numInput} is between 51 and 100`);
+  } else {
+    console.log(`${numInput} is greater than 100`);
+  }
+}

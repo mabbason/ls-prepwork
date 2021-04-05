@@ -1,0 +1,14 @@
+Excercise no 5
+What does the following code log to the console?
+
+function scream(words) {
+  return words + '!!!!';
+}
+
+scream('Yipeee');
+
+response:
+This got me on the last go around through the excercises. I was only looking for
+the return in the function and I missed the console.log had gone missing.
+This will also not log anything as there is no 'console.log' statement
+

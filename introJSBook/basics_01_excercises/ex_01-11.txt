@@ -1,0 +1,8 @@
+Excercise no 11
+What value does the following expression evaluate to?
+
+parseInt('3.1415')
+
+parseInt works with numbers, this is a string, so this probably evaluates to NaN.
+Bummer... I got this right the first time through when the material was fresh in my mind.
+Hopefully over time and repetition this type of knowledge will become second nature.

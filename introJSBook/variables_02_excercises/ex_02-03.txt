@@ -1,0 +1,12 @@
+Excercise no 3
+What happens when you run the following program? Why do we get that result?
+
+{
+  let foo = 'bar';
+}
+
+console.log(foo);
+
+response:
+We get undefined because the variable foo is declared in block scope, while
+console.log is searching the global scope to reference foo.

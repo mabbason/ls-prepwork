@@ -1,0 +1,31 @@
+Question no 5
+Identify the Constructors for each of the following:
+
+substring 
+create
+fromCharCode
+slice
+toString
+
+Make sure you list them all in your answer. 
+You can limit your search for methods to the String, Object, Array, and Number constructors.
+
+substring
+	Constructor = String
+	method = Protoype
+
+create
+	Constructor = Object
+	method = Static
+
+fromCharCode
+	Constructor = String
+	method = Static
+
+slice
+	Constructor = Array, String
+	method = Prototype
+  
+toString
+	Constructor = String, Number, Array, Object
+	method = Prototype

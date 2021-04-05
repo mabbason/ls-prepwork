@@ -1,0 +1,17 @@
+Excercise no 2
+Use the arithmetic operators to determine the individual digits of a 4-digit number like 4936:
+
+thousands place is 4
+(number - (number % 1000)) / 1000
+
+hundreds place is 9
+((number % 1000) - ((number % 1000) % 100)) / 100
+
+tens place is 3
+(number % 100 - (number % 10)) / 10
+
+ones place is 6
+number % 10
+
+seems like I might have been overcomplicating things with how
+I interpreted the excercise.

@@ -1,0 +1,36 @@
+{
+	"folders": [
+    {
+      "path": "arrays_07_excercises"
+    },
+    {
+      "path": "basics_01_excercises"
+    },
+    {
+      "path": "flowControl_05_excercises"
+    },
+    {
+      "path": "functions_04_excercises"
+    },
+    {
+      "path": "inputOutput_03_excercises"
+    },
+    {
+      "path": "loopsIterating_06_excercises"
+    },
+    {
+      "path": "moreStuff_09_excercises"
+    },
+    {
+      "path": "objects_08_excercises"
+    },
+    {
+      "path": "preparations_00_excercises"
+    },
+    {
+      "path": "variables_02_excercises"
+    }
+  ],
+  "settings": {
+  }
+}

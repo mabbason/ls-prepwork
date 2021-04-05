@@ -1,0 +1,16 @@
+Excercise no 6
+What does this code output to the console?
+
+function isArrayEmpty(arr) {
+  if (arr) {
+    console.log('Not Empty');
+  } else {
+    console.log('Empty');
+  }
+}
+
+isArrayEmpty([]);
+
+response:
+'Not Empty' will be logged because the function is only looking for the
+existence of an array, not looking inside of an array.

@@ -1,0 +1,8 @@
+Excercise no 4
+Explain why this code logs '510' instead of 15.
+
+console.log('5' + 10);
+
+It logs '510' to the console because of implicit coercion.
+One of the operands is a string while the other is a number.
+JavaSript coerces the number to a string, and then concatenates the two strings.

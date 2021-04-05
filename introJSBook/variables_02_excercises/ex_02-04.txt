@@ -1,0 +1,22 @@
+Excercise no 4
+What happens when you run the following code? Why?
+
+const NAME = 'Victor';
+console.log('Good Morning, ' + NAME);
+console.log('Good Afternoon, ' + NAME);
+console.log('Good Evening, ' + NAME);
+
+NAME = 'Joe';
+console.log('Good Morning, ' + NAME);
+console.log('Good Afternoon, ' + NAME);
+console.log('Good Evening, ' + NAME);
+
+response:
+We should get 
+'Good Morning, Victor'
+'Good Afternoon, Victor'
+'Good Evening, Victor'
+Then JS should error because NAME is a constant and can't be reassigned.
+I believe that the solution said it will continue with logging the same
+greetings with Victor again, but when I run it through node REPL is stops
+at the error.

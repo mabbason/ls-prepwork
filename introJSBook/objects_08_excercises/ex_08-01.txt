@@ -1,0 +1,16 @@
+Excercise no 01
+Given the following code, how can you access the name of the person?
+
+let person = {
+  name:       'Bob',
+  occupation: 'web developer',
+  hobbies:    'painting',
+};
+
+response:
+
+person.name;
+
+-or-
+
+person['name'];

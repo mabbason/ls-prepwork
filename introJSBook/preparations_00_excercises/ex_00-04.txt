@@ -1,0 +1,17 @@
+Question no 4
+
+1. foo.js outputs 'bar' to the console
+
+2. node REPL outputs:
+
+> let foo = "bar";
+> undefined
+> console.log(foo);
+> bar
+> undefined
+> foo;
+
+3. Chrome console REPL outputs:
+
+bar
+"bar"

@@ -1,0 +1,20 @@
+Question no 9
+Which of the following DO NOT satisfy the style guidelines:
+
+For constants, variables, or functions
+
+Name
+  index
+  CatName
+  snake_case
+  lazyDog
+  quick_Fox
+  1stCharacter
+  operand2
+  BIG_NUMBER
+
+Unacceptable
+  snake_case  // no error, but not according to guidelines
+  quick_Fox   // no error, but not according to guidelines
+  1stCharacter  // prdocues error, can't start with a number
+  

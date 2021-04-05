@@ -1,0 +1,20 @@
+Question no 7
+Which of the following satisfy the style guidelines:
+
+For functions
+
+Name
+  index
+  CatName
+  snake_case
+  lazyDog
+  quick_Fox
+  1stCharacter
+  operand2
+  BIG_NUMBER
+
+Valid
+  index
+  CatName - Constructor functions
+  lazyDog
+  operand2

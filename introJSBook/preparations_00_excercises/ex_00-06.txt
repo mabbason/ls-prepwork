@@ -1,0 +1,19 @@
+Question no 6
+Which of the following satisfy the style guidelines:
+
+For variables
+
+Name
+  index
+  CatName
+  snake_case
+  lazyDog
+  quick_Fox
+  1stCharacter
+  operand2
+  BIG_NUMBER
+
+Valid
+  index
+  lazyDog
+  operand2

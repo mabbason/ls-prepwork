@@ -1,0 +1,18 @@
+Excercise no 6
+Will this program produce an error when run? Why or why not?
+
+const FOO = 'bar';
+{
+  const FOO = 'qux';
+}
+
+console.log(FOO);
+
+response:
+No this will not produce an error as both 'FOO' variables exist within their own scope.
+Even though the global FOO exists inside the block as well, for the purpose of the block
+it will exist as 'qux'
+
+it effectively looks at them as two separate variables:
+global scope FOO
+block scope FOO
