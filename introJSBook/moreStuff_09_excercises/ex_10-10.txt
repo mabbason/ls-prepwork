@@ -1,0 +1,18 @@
+Excercise no 10
+
+> let x = "5"
+> x = x + 1
+= "51"
+
+> let y = "5"
+> y++
+= 6
+
+6 gets returned because in the first example JavaScripte coerces the 1 to a string
+and then concatenates the two strings, that is "51". But in the second example the
+increment operator takes the existing value and increases it by 1. A string can't
+be incremented or decremented so it coerces the y = "5" string to a number 5 and then
+performs the increment. 
+
+Well again I was on the right track, but I missed the pre/post ++y/y++ distinction
+and what the does for the return value.

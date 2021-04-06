@@ -1,0 +1,20 @@
+Excercise no 9
+Challenge excercise... determining -0.
+
+response:
+I think I have this one! I searched through some of the MDN Math methods
+and thought I could use Math.sign. I tried many examples and all of them 
+worked so I think this is good to go.
+
+function isNegativeZero (value) {
+  let result;
+  if (value === 0) {
+    if (Math.sign(1/value) > 0){
+      result = false;
+    } else {result = true;}
+  } else { result = false; }
+  return result;
+}
+
+Wow, as usual there was a much simpler way to do this. I have a feeling
+this is going to be a recurring thing as I continue to learn.

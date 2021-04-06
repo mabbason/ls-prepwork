@@ -1,0 +1,12 @@
+Excercise no 5
+What does the following function do?
+
+function doSomething(string) {
+  return string.split(' ').reverse().map((value) => value.length);
+}
+
+response:
+It takes a string and separates the entire string into an array with
+each separate word getting put in at the next index of the array. Then it
+reverses the order of the array and returns the length of each string
+in the array. 

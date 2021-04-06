@@ -1,0 +1,31 @@
+Excercise no 04
+Given a list of numbers, write some code to find and 
+display the largest numeric value in the list.
+
+List	              Max
+1, 6, 3, 2	        6
+-1, -6, -3, -2	    -1
+2, 2                2
+
+response:
+A couple ways first by manual... then with built in Math of JavaScript
+
+let numList1 = [1, 6, 3, 2];
+let numList2 = [-1, -6, -3, -2];
+let numList3 = [2, 2];
+
+function maxNum (numListArray) {
+  let max = numListArray[0];
+  numListArray.forEach(num => {
+    if (num > max) {max = num};
+  });
+  return max;
+}
+
+console.log(maxNum(numList1));
+console.log(maxNum(numList2));
+console.log(maxNum(numList3));
+
+console.log(Math.max(...numList1));
+console.log(Math.max(...numList2));
+console.log(Math.max(...numList3));

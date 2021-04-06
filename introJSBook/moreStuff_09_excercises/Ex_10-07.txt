@@ -1,0 +1,9 @@
+Excercise no 7
+What is exception handling and what problem does it solve?
+
+response: 
+Exception handling is when your program anticipates the potential for certain
+types of failures and has built in logic to handle those errors. It solves
+the problem of the program not running to completion.
+
+I was kind of in the ballpark but I see some of the nuance I missed.

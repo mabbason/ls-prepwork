@@ -1,0 +1,12 @@
+Excercise no 01
+What does this code log to the console? Why?
+
+let array1 = [1, 2, 3];
+let array2 = array1;
+array1[1] = 4;
+console.log(array2);
+
+response:
+It logs [1, 4, 3] to the console because both array assignments are pointing
+to the same array in memory. So when array1 gets mutated, array2 is pointing
+to the same array still so it logs the changed array.
