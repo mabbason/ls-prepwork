@@ -1,0 +1,16 @@
+Excercise no 2
+Which of the following values are valid keys for an object?
+
+1
+'1'
+undefined
+'hello world'
+true
+'true'
+
+response:
+'1'
+'hello world'
+'true'
+
+strings are the only valid keys for an object

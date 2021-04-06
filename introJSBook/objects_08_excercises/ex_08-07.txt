@@ -1,0 +1,42 @@
+Excercise no 7
+Add a qux property with value 3 to the myObj object we created in 
+the previous exercise. Now, examine the following code snippets:
+
+let myProtoObj = {
+  foo: 1,
+  bar: 2,
+};
+
+let myObj = Object.create(myProtoObj);
+objKeys['qux'] = 3;
+
+Snippet 1
+let objKeys = Object.keys(myObj);
+objKeys.forEach(function(key) {
+  console.log(key);
+});
+
+Snippet 1 Output:
+foo
+bar
+qux
+
+Object.keys(myObj) creates an array of ONLY the keys from myObj
+then the forEach iterates and logs that... so only the keys of myObj
+
+Snippet 2
+for (let key in myObj) {
+  console.log(key);
+}
+
+Snippet 2 Output:
+1
+2
+3
+
+the for/in loop goes through the myObj object and only outputs the VALUE 
+for each key as it goes along
+
+Hmm, apparently I didn't understand the usage of the for/in loop. 
+Ah, I see... I wasn't seeing the syntax correctly in the chapter.
+That and the Object.keys ONLY acting on the objects OWN keys.

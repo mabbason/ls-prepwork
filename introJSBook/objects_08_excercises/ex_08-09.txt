@@ -1,0 +1,31 @@
+Excercise no 9
+What does the following program log to the console? Why?
+
+let foo = {
+  a: 'hello',
+  b: 'world',
+};
+
+let qux = 'hello';
+
+function bar(argument1, argument2) {
+  argument1.a = 'hi';
+  argument2 = 'hi';
+}
+
+bar(foo, qux);
+
+console.log(foo.a);
+console.log(qux);
+
+response:
+The console will log the following
+
+'hi'
+'hello'
+
+when bar() function is called, an object is passed as argument1 and while
+at first glance is seems a variable is passed in as argument2 and then reassigned.
+That is not the case. Argument2 is passed a string, not a variable. So on
+Line 10 it is trying to assign a string to a string. It doesn't work and the
+original assignment of 'hello' to qux sticks and is the one logged.

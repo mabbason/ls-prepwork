@@ -1,0 +1,21 @@
+Excercise no 10
+How many primitive values are there in the following expression? Identify them. 
+How many objects are there in the expression? Identify those objects.
+
+[1, 2, ["a", ["b", false]], null, {}]
+
+response:
+Well the expression is an array which is not a primitive value. But within 
+that array there are primitive values, some nested in other arrays.
+There are 6 primitive values:
+1
+2
+"a"
+"b"
+false
+null
+
+There are several objects, four total.
+The larger containing array
+a nested array and one nested in that as well 
+and then an object in the containing array

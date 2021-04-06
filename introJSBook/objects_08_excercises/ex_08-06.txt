@@ -1,0 +1,26 @@
+Excercise no 6
+Which of the following values are primitive values? 
+Which are objects? Which are neither?
+
+"foo"
+3.1415
+[ 'a', 'b', 'c' ]
+false
+foo
+function bar() { return "bar"; }
+undefined
+{ a: 1, b: 2 }
+
+response:
+"foo"                                // Primitive
+3.1415                               // Primitive       
+[ 'a', 'b', 'c' ]                    // Object
+false                                // Primitive
+foo                                  // Neither, nothing to make it a string
+function bar() { return "bar"; }     // Neither, function
+undefined                            // Primitive
+{ a: 1, b: 2 }                       // Object
+
+
+I got the function wrong, I was only thinking arrays and objects were objects.
+I think that I was lumping functions in with the idea of a statement or an expression.
