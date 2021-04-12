@@ -72,3 +72,14 @@ It will log $3.99.
 admissionPrice has a ternary operator to check for true. It will print $5.25 if true. 
 BUT is has the ! in front of the sale variable. So it flips the true value of sale to 
 false and prints the second price. 
+
+Excercise no 10
+isMoving is true.
+You DO need the parentheses. The way it is currently written is:
+A < B && C
+If you take away the parentheses then you are left with:
+A < B && C || D
+It changes the order of operations.
+I was wrong while being correct. Yes the () are needed, but NOT in the manner in 
+which I described, but rather:
+A || B
