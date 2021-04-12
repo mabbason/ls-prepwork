@@ -1,0 +1,56 @@
+Excercises - Variable Scope (What's my value?)
+
+Excercise no 1
+I believe it will log 'undefined'. It's a global variable, but it isn't
+assigned a string value until AFTER the variable is logged to the console.
+
+Excercise no 2
+This one I beleive will actually generate an error. I don't quite understand
+but I think that technically the variable is created, but it's not initialized
+like var is with hoisting the intialization. 
+
+Excercise no 3
+It will raise an error because there is no myValue in the global scope.
+
+Excercise no 4
+This will log 1 to the console. The console log and 'a' variable it is referencing
+are in the same scope within the function. 
+
+Excercise no 5
+This should log 1, and then raise an error. It tries to initialize the 'a' variable
+in the same scope in which 'a' already is initialized. If 'a' had simply be reassigned
+then it would be fine, but it was declared again.
+Hmm, I see... I guess I thought they were in the same scope, but now I see that JavaScript
+was "seeing" the second variable declaration (thus overriding the function block scope first declaration), 
+but it hadn't been initialized WITHIN that smaller block yet so that's why it raises an error
+even the first time it is attempted to be logged.
+
+Excercise no 6
+This should log 'false'. The 'b' within the if statement only exists within that block, 
+it doesn't reference the 'b' variable in the global scope.
+
+Excercise no 7
+This will log 1 to the console. The function is hoisted, BUT so is the let variable. 
+Since the 'a' is initialized and assigned before the function is called it will work.
+if the value of 'a' changes, and then the same function is called again, it will 
+log whatever the value of 'a' is at that time. 
+
+Excercise no 8
+This will log 2 to the console. 'a' is used within the function only as an argument passed
+to the funciton, NOT as a variable with the assigned value of the number 1. Then 'b' is
+declared as 2, so the numeric value of 2 is passed to the function which takes it as an argument
+to log, which it does. 
+
+Excercise no 9
+This will raise an error. Several things going on here... 
+1. The function is called with an argument, but does have any parameters
+2. Within the function 'a' is assigned the value of 2, but it can't be since a is a const 
+BUT if within the function 'a' had been declared again, it would work since it would be a "new" 'a' variable
+3. Lastly there is no console.log() anywhere in the code.
+
+Excercise no 10
+This will log: { firstName: 'Jane', lastName: 'Doe' }
+The object has firstName as 'John' but even though the 'a' object is a const... 
+the contents of 'a' can be freely modified. So there is no problem for the myFunction 
+to modify the firstName to 'Jane' which is does when invoked. Then when console.log
+runs on 'a' the firstName now has 'Jane'
