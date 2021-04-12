@@ -1,0 +1,87 @@
+Excercises - Loops
+
+Excercise no 1
+for (let i = 0; i <= 10; i += 2) {
+  // include your code here
+  console.log(i);
+}
+
+I expect the following numbers to be logged:
+0
+2
+4
+6
+8
+10
+
+Excercise no 2
+for (let i = 10; i >= 1; i -= 1) {
+  console.log(i);
+}
+console.log('Launch!');
+
+Excercise no 3
+for (let i = 0; i <= 3; i += 1) {
+  // include your code here
+  console.log(Aloha!);
+}
+
+Excercise no 4
+for (let i = 1; i <= 100 ; i += 1) {
+  // include your code here
+  console.log(i * 2);
+}
+
+Excercise no 5
+let array = [1, 2, 3, 4];
+let index = 0;
+
+while (index < array.length) {
+  console.log(array[index]);
+  index += 1;
+}
+
+Excercise no 6
+let cities = ['Istanbul', 'Los Angeles', 'Tokyo', null, 'Vienna', null, 'London', 'Beijing', null];
+
+for (i = 0; i < cities.length; i += 1) {
+  if (cities[i] === null){
+    continue;
+  }
+  console.log(cities[i].length);
+}
+
+Excercise no 7
+The code keeps looping forever because there is no stopping condition specified in the loop.
+The following modified code will stop after one loop:
+for (let i = 0; i < 1; i += 1) {
+  console.log("and on");
+}
+
+Excercise no 8
+Logs all odd natural numbers between 1 and 40.
+let num = 1;
+while(num <= 40) {
+  if (num % 2 === 1){
+    console.log(num);
+  }
+  num += 1;
+}
+
+Ah, the suggested solution probably yields much better performance. No bool check, no double iteration, etc.
+
+Excercise no 9
+let fish = ['Dory', 'Marlin', 'Gill', 'Nemo', 'Bruce'];
+
+for (i = 0; i < 4; i += 1) {
+  console.log(fish[i]);
+}
+
+See this time I went for better performance because I had the benefit of knowing
+which index held the string 'Nemo'. But at first I did think of the if/break solution so that's good.
+
+Excercise no 10
+While statements check for a true condition before executing, then continue looping 
+as long as the condition remains true.
+Do/While statments check for a true condition after first executing. They 'Do' first
+then check that While condition is true, if it is then the continues again.

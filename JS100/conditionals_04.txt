@@ -1,0 +1,74 @@
+Excercises - Conditionals
+
+Excercise no 1
+From memory the following values are falsy:
+0
+null
+undefined
+false
+
+the bigger ones that I missed are:
+NaN and empty strings
+but I also missed: -0 and 0n BigInt zero
+
+Excercise no 2
+let randomNumber = Math.round(Math.random());
+
+if (randomNumber === 1) {
+  console.log('Yes!');
+} else {
+  console.log('No.');
+}
+
+Excercise no 3
+randomNumber === 1 ? console.log('Yes!'): console.log('No.');
+Ah I like the suggested solution better... it's cleaner
+
+Excercise no 4
+let weather = 'foggy';
+
+if (weather === 'sunny'){
+  console.log('It\'s a beautiful day!');
+} else if (weather === 'rainy') {
+  console.log('Grab your umbrella.');
+} else { 
+  console.log('Let\'s stay inside.');
+}
+
+Excercise no 5
+The following logs to the console:
+neigh
+tweet tweet
+*cricket*
+
+Excercise no 6
+let weather = 'rainy';
+
+switch (weather) {
+  case 'sunny':
+    console.log('It\'s a beautiful day!');
+    break;
+  case 'rainy':
+    console.log('Grab your umbrella.');
+    break;
+  case 'snowy':
+    console.log('Do you wanna build a snowman?');
+    break;
+  default:
+    console.log('Let\'s stay inside.');
+}
+
+Excercise no 7
+The if/else statment will always print 'Yes!' because the test will fail at false
+then check the other side of the || and find true. The || only needs ONE side of 
+the conditional to evaluate to true. 
+
+Excercise no 8
+The output will always be 'No...' because the && conditional will be searching if
+EITHER side evaluates to false to fail. 
+
+Excercise no 9
+It will log $3.99.
+admissionPrice has a ternary operator to check for true. It will print $5.25 if true. 
+BUT is has the ! in front of the sale variable. So it flips the true value of sale to 
+false and prints the second price. 

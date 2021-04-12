@@ -1,0 +1,82 @@
+Excercises - Reading Documentation 1
+
+Question no 1
+Response: An excellent source for JavaScript documentation 
+is MDN Web Docs at mozilla.org
+
+Question no 2
+Yes, JavaScript does have a method to lowercase a string. It is:
+toLowerCase()
+
+Question no 3
+No, there is not a method to capitalize a string. I would need to write
+something manually to do that, or write my own function/method.
+
+Question no 4
+You can access array elements by the name of the array followed 
+by a bracket with the index number of the element.
+For example:
+
+arrayName[1] for the example provided.
+
+Question no 5
+If we try to access an index which past the length of the array it will return undefined.
+
+Question no 6
+The return values are as follows:
+'palm tree'
+'palm tree'
+'sequoia'
+
+Question no 7
+The following statements return:
+typeof 23.5;    // number
+typeof 'Call me Ishmael.';    // string
+typeof false;   // boolean
+typeof 0;   // undefined
+typeof null;    // object
+typeof undefined;   //undefined
+
+Question no 8
+The following statments return as follows:
+typeof tweet;   // string
+typeof words;   // object
+typeof isValid; // boolean
+
+Question no 9
+let tweet = 'Starting to get the hang of it... #javascript #launchschool';
+
+tweet.split(' ');
+  evaluates to>>  
+  [ 'Starting',
+    'to',
+    'get',
+    'the',
+    'hang',
+    'of',
+    'it...',
+    '#javascript',
+    '#launchschool' ]
+
+tweet.split(' ').reverse();
+  evaluates to>>
+  [ '#launchschool',
+    '#javascript',
+    'it...',
+    'of',
+    'hang',
+    'the',
+    'get',
+    'to',
+    'Starting' ]
+
+tweet.split(' ').reverse().join(' ');
+  evaluates to>>
+  '#launchschool #javascript it... of hang the get to Starting'
+
+Question no 10
+'8' == 8;
+'8' === 8;
+
+These statments differ in whether they are testing for 'strict' equality
+strict equality: === : tests for value, type, and instance

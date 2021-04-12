@@ -1,0 +1,71 @@
+Excercises - Reading Documentation 2
+
+Excercise no 1
+let ice_cream_taste = 'chocolate' // snake case & semi-colon
+let ice_cream_density = 10    // snake case & semi-colon
+
+while(ice_cream_density > 0)
+{
+    console.log('Drip...');
+    ice_cream_density -= 1;
+}
+
+console.log('The '+ ice_cream_taste +' ice cream melted.');
+
+rewritten:
+let iceCreamTaste = 'chocolate';
+let iceCreamDensity = 10;
+
+while(iceCreamDensity > 0)
+{
+    console.log('Drip...');
+    iceCreamDensity -= 1;
+}
+
+console.log('The '+ iceCreamTaste +' ice cream melted.');
+
+Excercise no 2
+Remember primitive data types:
+Reponse: number, string, boolean, null, undefined... one more
+looks like there were two more: BigInt and Symbol.
+
+Excercise no 3
+Largest numeric value in JavaScript?
+Number.MAX_VALUE;
+
+Excercise no 4
+Evaluates to? 4 * 5 + 3 ** 2 / 10
+response: 20.9 same as (4*5) + ((3**2) / 10)
+
+Excercise no 5
+Wow, I didn't expect that! The number of milliseconds that has elapsed since
+January 1, 1970 00:00:00 UTC.
+
+Excercise no 6
+getYear() is deprecated as it returns the year minus 1900 and doesn't return the full year.
+Using getFullYear() should be used instead as it returns a 4 digit number for the year.
+
+Excercise no 7
+Array.prototype.join() expects one. You call it on one array and with one arguement.
+If you call it with more then it only uses the first arguement, and if you call it with 
+less then it will still join all the elements but with no separator. 
+
+Excercise no 8
+We can use the + operator with two or more strings to concatenate them or we can 
+use the concat() method and pass the different strings as arguments. 
+
+Excercise no 9
+Corrected code:
+let speedLimit = 60;
+let currentSpeed = 80;
+
+if ((currentSpeed > speedLimit) && ((currentSpeed - speedLimit) > 5)) {
+  console.log('"People are so bad at driving cars ' +
+    'that computers don\'t have to be that good to be much better." ' +
+    '-- Marc Andreessen');
+}
+
+Excercise no 10 
+tweet.length() raises an error because length is not a function/method to be called.
+Adding the () to the end makes JavaScript interpret it as such. Length is a property 
+that can be accessed but not a function to be invoked.
