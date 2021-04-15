@@ -1,0 +1,105 @@
+Excercises - Arrays
+
+Excercise no 1
+let array = ['Earth', 'Moon', 'Mars']; // 'Earth'
+
+function first (arr) {
+  return arr[0];
+}
+
+console.log(first(array));
+
+If the array was empty it would return undefined.
+
+Excercise no 2
+let array = ['Earth', 'Moon', 'Mars']; // 'Earth'
+
+function first (arr) {
+  return arr[arr.length-1];
+}
+
+console.log(first(array));
+
+Excercise no 3
+let energy = ['fossil', 'solar', 'wind', 'tidal', 'fusion'];
+
+energy.shift()
+energy.push('geothermal');
+
+Excercise no 4
+let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+let alphabetArr = Array.from(alphabet)
+console.log(alphabetArr);
+But it looks like there are several ways to do this...
+
+Excercise no 5
+let scores = [96, 47, 113, 89, 100, 102];
+let highScores = 0;
+
+scores.forEach(function (num) {
+  if (num >= 100) {
+    highScores += 1;
+  }
+});
+
+console.log(highScores);
+
+Excercise no 6
+let vocabulary = [
+  ['happy', 'cheerful', 'merry', 'glad'],
+  ['tired', 'sleepy', 'fatigued', 'drained'],
+  ['excited', 'eager', 'enthused', 'animated']
+];
+
+// Expected output:
+// happy
+// cheerful
+// merry
+// etc...
+
+vocabulary.forEach(vocabArray => {
+  vocabArray.forEach(vocabWord => console.log(vocabWord));
+});
+
+Excercise no 7
+I expect it to log false. As there were two separate arrays created and the 
+=== is testing to see if one array is the other array. It is not, even though 
+the contents of the array may match the other, they are both different arrays.
+
+Excercise no 8
+You can use the isArray() method to see if something is an array. It will return true/false
+
+Excercise no 9
+let destinations = ['Prague', 'London', 'Sydney', 'Belfast', 'Rome',
+  'Aruba', 'Paris', 'Bora Bora', 'Barcelona', 'Rio de Janeiro',
+  'Marrakesh', 'New York City'];
+
+function contains (city, array) {
+  return array.forEach(destination => {
+    return destination === city});
+}
+   
+console.log(contains('Barcelona', destinations));
+I was sticking with my practice of the forEach() array method. But that was not
+what was needed here. I didn't get it to work, but even if I had then it would only
+return whether the last element it checked in the array was true/false. I would have
+needed to made sure it continued iterating UNTIL it found a truthy value.
+The indexOf() method was quite elegant. 
+
+Excercise no 10
+let passcode = ['11', 'jZ5', 'hQ3f*', '8!7g3', 'p3Fs'];
+
+// Write some code here.
+// Expected return value: '11-jZ5-hQ3f*-8!7g3-p3Fs'
+
+let joinedPasscode = passcode.join('-');
+console.log(joinedPasscode);
+
+Excercise no 11
+let groceryList = ['paprika', 'tofu', 'garlic', 'quinoa', 'carrots', 'broccoli', 'hummus'];
+
+while (groceryList.length > 0) {
+  console.log(groceryList.shift())
+};
+
+console.log(groceryList);

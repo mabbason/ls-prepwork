@@ -1,0 +1,63 @@
+Excercises Functions 2
+
+Excercise no 1
+function greet(greeting = 'Hello') {
+  console.log(greeting + ', world!');
+}
+Assigning the parameter to a value will set the default value of that parameter
+if nothing is passed into the function.
+
+Excercise no 2
+function greet(greeting = 'Hello', recipient = 'world') {
+  console.log(greeting + ', ' + recipient + '!');
+}
+It produced the expected results.
+
+Excercise no 3
+function greeting() {
+  return 'Good morning';
+}
+
+function recipient() {
+  return 'Launch School';
+}
+
+function greet() {
+  console.log(`${greeting()}, ${recipient()}!`);
+}
+
+greet();   
+I used a template literal and just put in the functions.
+
+Excercise no 4
+function calculateBMI(height, weight) {
+  let bmi = Math.round(((weight/((height/100)**2)) + Number.EPSILON) *100)/100;
+  return bmi.toString();
+}                       
+
+console.log(calculateBMI(180,80));
+I wasn't really sure, but with searching MDN and SO I was able to put the above together.
+It seems a little complicated visually so I will be interested to see if there if a more
+elegant solution. 
+Ah of course there is a simpler way. I find it interesting that I didn't come across
+the toFixed() method in my searches.
+
+Excercise no 5
+function catAge(humanAge) {
+ let catAge;
+ if (humanAge === 0) {
+  catAge = 0;   
+ } else if (humanAge === 1) {
+  catAge = 15;
+ }  else if (humanAge === 2) {
+  catAge = 24;
+ }  else {
+   catAge = (humanAge - 2) * 4 + 24;
+ }
+return catAge;
+}
+Again there feels like there could be a more elegant solution out there. 
+Originally I was trying to use a switch/case and take advantage of the 
+fall through by not putting in a break. But I got screwed up and so I 
+fell back to this kind of rudimentary if/then... I don't really like it though.
+Bummmer, and then of course the solution is the switch statement... sigh

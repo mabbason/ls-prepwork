@@ -1,0 +1,97 @@
+Excercises - Strings
+
+Excercise no 1
+"These aren't the droids you're looking for.".length;
+I just went the simple route and appended the property length to the string.
+
+Excercise no 2
+let string = 'confetti floating everywhere'.toUpperCase();
+console.log(string);
+
+Excercise no 3
+
+function repeat(reps, str) {
+  let i = 1;
+  let rptString = '';
+  while (i <= reps ) {
+    rptString += str;
+    i += 1;
+  }
+  return rptString;
+}
+
+console.log(repeat(5, 'ha'));
+I had trouble with this one. It's the first one that I checked the solution first
+before finding something that at least worked. I was so close, but I think the real 
+thing that I missed was setting the empty string. I was setting it to the passed parameter string.
+
+Excercise no 4
+We can use either a template literal which will preserve our line breaks, or we 
+can you the \n within a standard string to tell JavaScript to print on a new line.
+Hmm, well it looks like I can't just use a template literal. I can but it's not as 
+easy as just hitting return for a new line as I was alluding to.
+
+Excercise no 5
+You can convert each string with toUpperCase() or toLowerCase() before comparing them for example:
+
+let string1 = 'Polar Bear';
+let string2 = 'Polar bear';
+let string3 = 'Penguin';
+let comp;
+
+if (string1.toLowerCase() === string3.toLowerCase()){
+  comp = true;
+} else {
+  comp = false;
+}
+
+console.log(comp);
+
+Excercise no 6
+let byteSequence = 'TXkgaG92ZXJjcmFmdCBpcyBmdWxsIG9mIGVlbHMu';
+
+console.log(/x/.test(byteSequence));
+I think I missed this one before in a similar instance. I need to work on remembering the
+usefulness of includes().
+
+Excercise no 7
+function isBlank(string) {
+  return (string === true) ? true: false;
+}
+
+console.log(isBlank('mars'));
+console.log(isBlank('    '));
+console.log(isBlank(''));
+
+I started overcomplicating this... but I did think it odd that an empty string
+returned a true value. I thought that an empty string was falsy?? I did not come
+up a successful version before looking at the solution though.
+
+Excercise no 8
+
+I did the same thing here... maybe I was just studying too long but my brain seems
+in a rut with this. I was very close to the right solution. I read through the 
+documentaton and almost used string.trim() but for some reason I thought of how 
+that solution would break down. Obviously I was wrong and now that I consider it 
+again, it seems pretty clear. 
+
+Excercise no 9
+Haha, new day... I got this one. We will see how effecient I was, but I still got it.
+
+let stringInitial = 'launch school tech & talk';
+
+let stringCapWords = stringInitial.split(' ');
+
+for (i = 0; i < stringCapWords.length; i += 1) {
+  stringCapWords[i] = stringCapWords[i].charAt(0).toUpperCase() + stringCapWords[i].slice(1);
+}
+
+stringCapWords = stringCapWords.join(' ');
+
+console.log(stringCapWords);
+
+Great! I did it and even used less lines of code, but that may not be the goal. 
+Either way I basically did it the same way as was proposed.
+
+
+
