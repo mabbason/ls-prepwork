@@ -61,3 +61,29 @@ Originally I was trying to use a switch/case and take advantage of the
 fall through by not putting in a break. But I got screwed up and so I 
 fell back to this kind of rudimentary if/then... I don't really like it though.
 Bummmer, and then of course the solution is the switch statement... sigh
+
+Excercise no 6
+function removeLastChar(string) {
+  return string.slice(0, string.length - 1)
+}
+
+console.log(removeLastChar('miles'));
+
+Excercise no 7
+Refactored with arrow syntax
+let sentence = (verb, noun) => {
+  return template
+    .replace('VERB', verb)
+    .replace('NOUN', noun);
+}
+
+Excercise no 8
+let initGame = () => ({ level: 1, score: 0 });
+
+let game = initGame();
+
+console.log('Level: ' + game.level);
+console.log('Score: ' + game.score);
+
+
+

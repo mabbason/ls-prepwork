@@ -1,0 +1,85 @@
+Excercises - Objects
+
+Excercise no 1
+console.log(student.courses);
+console.log(student['courses']);
+Either dot notation or bracket notation let us access an object's properties
+If you try to access an object property that does not exist then it will 
+return undefined.
+
+Excercise no 2
+let jane = {
+  firstName: 'Jane',
+  lastName: 'Harrelson',
+  age: 32,
+  location: {
+    country: 'Denmark',
+    city: 'Aarhus'
+  },
+  occupation: 'engineer',
+};
+
+console.log(jane.location.country);
+console.log(jane['location']['country']);
+Again just using dot notaion or bracket notation.
+
+Excercise no 3
+fido.age = '';
+fido['favorite food'] = '';
+The first one was shown using dot notation. The second one contains
+a space in it and so bracket notation must be used.
+
+Excercise no 4
+Snippet One logs: {prefix: 'Pacific'}
+Snippet Two logs: {'Indian': 'Pacific'}
+Great, I thought I understood the difference, but confirmation is good. It looks
+like the '' string notation is dropped if there are no special characters or whitespace.
+
+Excercise no 5
+I was all set to describe the solution but then I figured out my first impulse was incorrect.
+But in that process I did uncover why...
+The for/in loop is testing each property to see if it equals the boolean value of true.
+But objects are made of key value pairs. A key is always a string. So the object has a 
+key with a string of 'true'. If you change the code to test for === 'true' THEN you would 
+be able to log "It's true!"
+
+Excercise no 6
+let keys = [];
+for (let prop in vehicle) {
+  keys.push(prop);
+}
+
+console.log(keys);
+the for/in loops through the object and pushes each prop into the empty array 
+that we created.
+
+Excercise no 7
+After searching the documentation it seems that the following:
+let array = Object.entries(person);
+console.log(array)
+
+will let us do it. BUT I believe this could lead to trouble if there is a specific
+expected output for the order of the array.
+
+Excercise no 8
+I believe the reverse of the above would be to use the Object.fromEntries() method.
+I came across this first in attempting to answer the previous question. This works for
+any iterable object. Nope. I misunderstood the use of that. I will try to put something
+together using the suggested for loop solution.
+Alright here is my solution...
+let newObj = {};
+
+for (let i = 0; i < nestedArray.length; i += 1) {
+  newObj[nestedArray[i][0]] = nestedArray[i][1];
+}
+
+console.log(newObj);
+Mine is more concise, but the suggested solution seems more readable.
+
+Excercise no 9
+Object.assign() method makes a shallow copy pretty easy.
+
+function clone(obj) {
+  let objCopy = {};
+  return Object.assign(objCopy, obj);
+}
